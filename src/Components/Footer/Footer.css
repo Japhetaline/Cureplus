@@ -1,0 +1,198 @@
+/* Footer Container (Parent Layout) */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section (Top of Footer) */
+  .footer-header {
+    position: relative; /* Make the container a positioning context */
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 40px;
+    background: url('../Images/Footer_img.jpg') no-repeat center center/cover;
+    border-radius: 50px;
+    width: 1168px;
+    height: 536px;
+    margin-top: 60px;
+    margin-bottom: -150px; /* To overlap slightly with the footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for a floating effect */
+    z-index: 1;
+    overflow: hidden; /* Ensure the overlay doesn’t spill out */
+}
+
+.footer-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* The overlay color */
+    opacity: 0.6; /* Adjust for transparency (0 is fully transparent, 1 is fully opaque) */
+    z-index: 0; /* Place the overlay behind the content */
+    border-radius: 50px; /* Match the border radius of the container */
+}
+
+.footer-header-content {
+    position: relative; /* Ensure content stays above the overlay */
+    z-index: 1;
+}
+  
+  .footer-header-content h1 {
+font-size: 55px;
+font-weight: 400;
+line-height: 60px;
+text-align: left;
+    color: #222;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-header-content p {
+font-size: 24px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .footer-head-action-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+  }
+  
+  .footer-head-sign-up-btn {
+    background-color: #96C758;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .footer-head-sign-up-btn:hover{
+    transform: scale(1.1);
+    background: white; 
+    color: #96C758;
+  }
+  
+  .footer-head-download-btn {
+    background-color: transparent;
+    color: #96C758;
+    padding: 10px 20px;
+    border: 2px solid #96C758;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Footer Section */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #2a3d66;
+    color: white;
+    padding: 60px 20px;
+    width: 1260px;
+    height: 528px;
+    position: relative; /* Ensure stacking works properly */
+    z-index: 0;
+  }
+  
+  
+  .footer-column {
+    flex: 1;
+    margin: 120px 15px;
+    text-align: left;
+  }
+  
+  .logo-section img {
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 140px;
+    margin-bottom: 10px;
+  }
+
+  .logo-section p{
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+color: #FFFFFF;
+margin-left: 55px;
+  }
+  
+  .footer-column h3 {
+    color: #77c044;
+    margin-bottom: 15px;
+font-size: 24px;
+font-weight: 500;
+line-height: 35px;
+
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+    margin: 10px 0;
+  }
+
+  .footer-column p{
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+color: white;
+text-align: left;
+  }
+
+  .footer-column-b{
+    text-align: center;
+    width: 279px;
+height: 50px;
+padding: 10px;
+gap: 20px;
+border-radius: 10px;
+border: 1px solid white;
+margin-top: 10px;
+  }
+  
+  /* Social Media */
+  .social-media-icons {
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+  
+  .social-media-icons i:hover {
+    color: #77c044;
+  }
+  
+  /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .footer-header {
+          margin-bottom: -30px; /* Adjust overlap on smaller screens */
+        }
+      }
+  
+  

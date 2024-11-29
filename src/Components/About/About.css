@@ -1,0 +1,362 @@
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+  }
+  
+  .feature-card {
+width: 393px;
+height: 451px;
+gap: 0px;
+border-radius: 30px 0px 0px 0px;
+opacity: 0px;
+    background-color: #e9f3fb;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+  }
+  
+  .icon-container i {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #4caf50;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .worker-con{
+    display: flex;
+    gap: 20px;
+  }
+
+  .worker-con-left img{
+    width: 777px;
+    height: 518px;
+  }
+
+  .worker-title-head{
+    margin-top: 50px;
+font-size: 50px;
+font-weight: 300;
+line-height: 50px;
+text-align: left;
+  }
+
+.worker-title{
+    margin-top: 50px;
+font-size: 24px;
+font-weight: 300;
+line-height: 35px;
+text-align: left;
+  }
+  .worker-button{
+    margin-top: 40px;
+    width: 242px;
+height: 70px;
+padding: 10px 0px 0px 0px;
+border-radius: 50px;
+border: 0px;
+opacity: 0px;
+background: linear-gradient(125.44deg, #96C758 11.9%, #71A82A 94.89%);
+  }
+
+  .worker-button a{
+font-size: 32px;
+font-weight: 300;
+align-items: center;
+color: #FFFFFF;
+text-decoration: none;
+text-align: center;
+  }
+
+/* HowItWorks.css */
+.how-it-works {
+    width: 1171px;
+height: 582px;
+    background-color: #13526F;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 30px;
+    margin: 40px 40px;
+  }
+  
+  .how-it-works h2 {
+font-size: 50px;
+font-weight: 300;
+line-height: 35px;
+text-align: center;
+margin-bottom: 30px;
+color: #FFFFFF;
+  }
+  
+  .how-it-works .description {
+font-size: 32px;
+font-weight: 275;
+line-height: 35px;
+text-align: center;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .step-card {
+    width: 357px;
+height: 252px;
+background: linear-gradient(135deg, #FFFFFF66 40%, #FFFFFFB2 70%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    max-width: 300px;
+    min-width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .step-card:hover {
+    transform: translateX(-15px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step-card .icon {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .step-card h3 {
+font-size: 36px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+    color: #ffffff;
+  }
+
+ 
+  /* Overall Section */
+.meet-doctors {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Main Content - Image and Text */
+  .meet-doctors-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+  
+  /* Doctor Image Container */
+  .doctor-image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Background Rectangle */
+  .doctor-image-background {
+    position: absolute;
+    width: 190.39px;
+    height: 515.6px;
+    top: -106.27px;
+    margin-left: 66px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: rotate(40.76deg);
+    z-index: 1;
+  }
+  
+  /* Doctor Image Styling */
+  .doctor-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .doctor-image-name{
+    margin-right: 35px;
+  }
+  
+  /* Text Section */
+  .doctor-text {
+    flex: 1;
+    text-align: right;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .doctor-text h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-text p {
+    justify-content: right;
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 35px;
+  }
+  
+  /* Doctor Thumbnails */
+  .doctor-thumbnails {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Individual Thumbnail */
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .testimonials-section {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .testimonials-title {
+    font-size: 48px;
+    font-weight: 300px;
+    color: #333;
+  }
+
+  .testimonials-title_line{
+width: 207px;
+border: 2px solid #2E2E2E;
+margin-left: 40%;
+margin-bottom: 30px
+  }
+  
+  .testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    border-radius: 30px;
+  }
+  
+  .testimonial-card {
+    width: 499px;
+height: 663px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 10px 60px 0px #9ACEE666;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+font-size: 20px;
+font-weight: 275;
+line-height: 30px;
+text-align: center;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+    color: #222;
+    margin-top: 15px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .step-card {
+      width: 90%;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr; /* Stack the cards in one column */
+    }
+  
+    .feature-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

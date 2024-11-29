@@ -1,0 +1,64 @@
+.faq-section {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .faq-title {
+    font-size: 48px;
+    font-weight: 300px;
+    color: #333;
+  }
+
+  .faq-title_line{
+width: 207px;
+border: 2px solid #2E2E2E;
+margin-left: 40%;
+margin-bottom: 30px
+  }
+  
+  .faq-container {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  
+  .faq-card {
+    width: 845px;
+height: 216px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 10px 60px 0px #9ACEE666;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .faq-card-title {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    color: #96C758;
+    margin-bottom: 20px;
+      }
+  
+  .faq-text{
+font-size: 20px;
+font-weight: 400;
+line-height: 40px;
+text-align: center;
+color: #5B5B5B;
+  }
+
+  .sponsors{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .sponsors-img{
+    width: 147px;
+height: 75px;
+
+  }

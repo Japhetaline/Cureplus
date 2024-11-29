@@ -1,0 +1,237 @@
+.hero {
+  height: 100vh;
+  background: url('../Images//Hero.jpg') no-repeat center center/cover; /* Replace with the actual background image */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General container styles */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Container for the first heading */
+.hero-content-1 {
+  width: 428px;
+  transform: rotate(1.78deg); /* Adjust rotation */
+  margin-bottom: 10px; /* Space between elements */
+  opacity: 1; /* Make visible */
+  background-color: white;
+}
+
+/* Styling for "Your Health," text */
+.hero-content-health {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px; /* Adjust font size for better fit */
+  font-weight: 500; /* Set font weight for clarity */
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+/* Container for the second heading */
+.hero-content-2 {
+  width: 638px;
+  transform: rotate(1.78deg); /* Adjust rotation */
+  margin-bottom: 10px; /* Space between elements */
+  opacity: 1; /* Make visible */
+  background-color: white;
+}
+
+/* Styling for "Anytime, Anywhere" text */
+.hero-content-anytime {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px; /* Adjust font size */
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero-content-anytime span {
+  color: #4CAF50; /* Green highlight for "Anywhere" */
+  font-weight: 600;
+}
+
+/* Container for the paragraph */
+.hero-content-3 {
+  display: flex; /* Use flexbox to center content */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full-width container */
+  max-width: 438px; /* Limit width to match design */
+  margin: 20px auto; /* Center container and add spacing */
+  padding: 20px; /* Add padding for better spacing */
+  transform: rotate(1.78deg); /* Apply rotation */
+  opacity: 1; /* Make visible */
+  background-color: white; /* Background for container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Styling for the paragraph text */
+.hero-content-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px; /* Adjust font size for readability */
+  font-weight: 400; /* Normal font weight for paragraph */
+  line-height: 1.6; /* Increase line height for better readability */
+  color: #555; /* Neutral gray text color */
+  text-align: center; /* Center-align text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Main container */
+.hero-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: transparent; /* Transparent background to match design */
+}
+
+/* Left Section: Medical practitioners info */
+.hero-footer-left {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-footer-left h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #53b742; /* Green color */
+  margin: 0;
+}
+
+.hero-footer-left p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffff; /* Neutral gray for text */
+  margin: 5px 0 0 0;
+  line-height: 1.5;
+}
+
+/* Scroll Indicator */
+.hero-scroll {
+  width: 60px;
+height: 93px;
+top: 778px;
+left: 690px;
+gap: 0px;
+border-radius: 30px;
+opacity: 0px;
+background-color: white;
+  color: #53b742; /* Green arrow */
+  text-align: center;
+}
+
+.hero-scroll span {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Right Section: Green Circular Icon */
+.hero-footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #53b742; /* Green background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.plus-icon {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+/* Hero-Middle Section */
+.hero-middle-con {
+  height: 30vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('../Images/Hero_middle.png') no-repeat center center/cover;
+}
+
+/* Overlay effect */
+.hero-middle-con::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 82, 111, 0.8); /* Color overlay with transparency */
+  z-index: 1; /* Overlay on background image */
+}
+
+/* Stats container styling */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Adjust width to center content */
+  z-index: 2; /* Ensure content is above overlay */
+}
+
+/* Individual stat item styling */
+.stat-item {
+  text-align: center;
+  color: white; /* Ensure text contrasts against the overlay */
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50; /* Green color */
+  margin: 0;
+}
+
+.stat-description {
+  font-size: 1rem;
+  margin: 5px 0 0;
+  color: #ffffff; /* White description text */
+}
+
+/* Divider between stats */
+.stat-divider {
+  height: 50px;
+  width: 1px;
+  background-color: #4caf50; /* Green divider */
+  margin: 0 20px; /* Space between stats */
+  z-index: 2;
+}
+
+
