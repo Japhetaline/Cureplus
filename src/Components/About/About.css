@@ -74,6 +74,7 @@ font-weight: 300;
 line-height: 35px;
 text-align: left;
   }
+
   .worker-button{
     margin-top: 40px;
     width: 242px;
@@ -337,26 +338,137 @@ text-align: center;
   }
   
   
-  @media (max-width: 768px) {
-    .steps-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .step-card {
-      width: 90%;
-    }
+  /* General Media Queries */
+@media (max-width: 768px) {
+  .steps-container,
+  .worker-con,
+  .meet-doctors-content,
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card,
+  .testimonial-card,
+  .feature-card,
+  .worker-button {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .worker-con-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .worker-title-head {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .worker-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .worker-button {
+    width: 100%;
+  }
+
+  .doctor-thumbnails {
+    justify-content: center;
+  }
+
+  .doctor-text {
+    text-align: center;
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .worker-con-left img {
+    margin-bottom: 0;
+  }
+
+  .worker-title-head {
+    line-height: 25px;
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+
+  .worker-title {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 10px 0 0;
+  }
+
+  .worker-button {
+    width: 142px;
+    height: 50px;
+    padding: 15px;
+    margin-left: 35%;
+  }
+
+  .worker-button a {
+    font-size: 18px;
+  }
+
+  .how-it-works {
+    padding: 20px;
+    width: 100%;
+    height: 782px;
+  }
+
+  .how-it-works h2 {
+    font-size: 28px;
+  }
+
+  .how-it-works .description {
+    font-size: 18px;
+  }
+
+  .steps-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    width: 257px;
+    height: 152px;
+    margin-left: 25px;
+  }
+
+  .step-card .icon {
+    margin-bottom: 0px;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .features-container {
-      grid-template-columns: 1fr; /* Stack the cards in one column */
-    }
-  
-    .feature-card {
-      width: 90%;
-      margin: 0 auto;
-    }
+  .step-card h3 {
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 25px;
   }
+
+
+  
+  /* Background Rectangle */
+  .doctor-image-background {
+    position: absolute;
+    width: 150.39px;
+    height: 515.6px;
+    top: -106.27px;
+  }
+}
+
+
+
   

@@ -62,3 +62,93 @@ color: #5B5B5B;
 height: 75px;
 
   }
+
+  @media (max-width: 768px) {
+    /* FAQ Section */
+    .faq-title {
+      font-size: 36px;
+    }
+  
+    .faq-title_line {
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .faq-container {
+      grid-template-columns: 1fr; /* Stack FAQ cards */
+      padding: 20px;
+    }
+  
+    .faq-card {
+      width: 90%; /* Full width with margin */
+      margin: 0 auto;
+      height: auto;
+    }
+  
+    .faq-card-title {
+      font-size: 28px;
+    }
+  
+    .faq-text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    /* Sponsors Section */
+    .sponsors {
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .sponsors-img {
+      width: 100px;
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* FAQ Section */
+    .faq-title {
+      font-size: 28px;
+    }
+  
+    .faq-title_line {
+      width: 100px;
+      margin: 0 auto;
+    }
+  
+    .faq-container {
+      padding: 10px;
+      gap: 15px;
+    }
+  
+    .faq-card {
+      width: 100%; /* Full screen */
+      padding: 15px;
+    }
+  
+    .faq-card-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .faq-text {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    /* Sponsors Section */
+    .sponsors {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .sponsors-img {
+      width: 80px;
+      height: auto;
+    }
+  }
+  
